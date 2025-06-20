@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="matrix-canvas"></canvas>
+
+    <div class="container">
+        <div class="greet">
+            <h2 id="greetingText">Hello</h2>
+        </div>
+
+        <button id="settingsBtn" class="settings-btn" title="Settings">⚙️</button>
+
+        <div class="search-container">
+            <div class="search-wrapper">
+                <input type="text" class="search-box" placeholder="Search . . ." id="searchBox" autocomplete="off" spellcheck="false">
+                <button id="engineToggle" class="engine-toggle">
+                    <img id="engineIcon" src="icons/google.png" alt="Search Engine" width="28" height="28">
+                </button>
+            </div>
+        </div>
+
+        <div class="quick-links">
+            <a href="https://chess.com" class="link-card">
+                <div class="link-icon"><img src="icons/chess.png" width="50" height="50"></div>
+                <div class="link-title">Chess</div>
+            </a>
+            <a href="https://open.spotify.com" class="link-card">
+                <div class="link-icon"><img src="icons/spotify.png" width="50" height="50"></div>
+                <div class="link-title">Spotify</div>
+            </a>
+            <a href="https://chatgpt.com" class="link-card">
+                <div class="link-icon"><img src="icons/chatgpt.png" width="50" height="50"></div>
+                <div class="link-title">ChatGPT</div>
+            </a>
+            <a href="https://claude.ai" class="link-card">
+                <div class="link-icon"><img src="icons/claude.png" width="50" height="50"></div>
+                <div class="link-title">Claude</div>
+            </a>
+            <a href="https://github.com" class="link-card">
+                <div class="link-icon"><img src="icons/github.png" width="50" height="50"></div>
+                <div class="link-title">GitHub</div>
+            </a>
+            <a href="https://youtube.com" class="link-card">
+                <div class="link-icon"><img src="icons/youtube.png" width="50" height="50"></div>
+                <div class="link-title">YouTube</div>
+            </a>
+            <a href="https://reddit.com" class="link-card">
+                <div class="link-icon"><img src="icons/reddit.png" width="50" height="50"></div>
+                <div class="link-title">Reddit</div>
+            </a>
+            <a href="https://mail.google.com" class="link-card">
+                <div class="link-icon"><img src="icons/gmail.png" width="50" height="50"></div>
+                <div class="link-title">Gmail</div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+	<div class="modal" id="settingsModal">
+		<div class="modal-content">
+			<h3>Settings</h3>
+
+			<div class="form-group">
+				<label for="nameInput">Your Name:</label>
+				<input type="text" id="nameInput" placeholder="Enter your name" autocomplete="off" spellcheck="false"/>
+			</div>
+
+			<div class="form-group">
+				<label for="titleInput">New Tab Title:</label>
+				<input type="text" id="titleInput" placeholder="Enter tab title" autocomplete="off" spellcheck="false"/>
+			</div>
+
+			<button id="saveSettingsBtn">Save Settings</button>
+		</div>
+	</div>
+
+    <script src="script.js"></script>
+	
+</body>
+</html>
