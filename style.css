@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
+html, body, *, *::before, *::after {
+  cursor: url("cursor/cursor.cur"), auto !important;
+}
+
+a, button, input, textarea, select, label {
+  cursor: url("cursor/cursor.cur"), auto !important;
+}
+
+input[type="text"], textarea {
+  cursor: url("cursor/cursor.cur"), auto !important;
+}
+
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: #000;
